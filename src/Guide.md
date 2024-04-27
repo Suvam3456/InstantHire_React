@@ -1,10 +1,15 @@
 Steps:
 npm create vite@latest
+
 npm install (To install dependencies in package.json)
+
 npm run dev
+
 Create Components inside src such as Home.jsx, About.jsx, Services.jsx, Contact.jsx
 
-App.jsx -: Create a wrap (empty tag) inside return, import above components
+App.jsx -: Create a wrap (empty tag) inside return, 
+import above components
+
 npm install react-router-dom (for routing)
 
 create BrowserRouter tag  inside return and Router in the Wrap and
