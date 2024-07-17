@@ -1,30 +1,25 @@
 const reducer = (state, action) => {
-  if (action.type === "HOME_UPDATE") {
-    return {
-      ...state,
-      name: action.payload.name,
-      image: action.payload.image,
-    };
+  switch (action.type) {
+    case "HOME_UPDATE":
+      return {
+        ...state,
+        name: action.payload.name,
+        image: action.payload.image,
+      };
+    case "ABOUT_UPDATE":
+      return {
+        ...state,
+        name: action.payload.name,
+        image: action.payload.image,
+      };
+    case "GET_SERVICES":
+      return {
+        ...state,
+        services: action.payload,
+      };
+    default:
+      return state;
   }
-
-  if (action.type === "ABOUT_UPDATE") {
-    return {
-      ...state,
-      name: action.payload.name,
-      image: action.payload.image,
-    };
-  }
-
-  if (action.type === "GET_SERVICES") {
-    return {
-      ...state,
-      services: action.payload,
-    };
-  }
-
-  return state;
 };
 
 export default reducer;
-
-// Yha default hona jaruri minimum ek har file me
