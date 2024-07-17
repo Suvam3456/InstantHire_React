@@ -6,21 +6,20 @@ import { Button } from "./styles/Button";
 
 const Services = () => {
   const { services } = useGlobalContext();
-  console.log(services);
 
   return (
     <Wrapper className="section">
       <h2 className="common-heading">Our Services</h2>
       <div className="container grid grid-three-column">
         {services.map((curElem) => {
-          const { id, name, image, description } = curElem;
+          const { id, title, url, description } = curElem;
           return (
             <div key={id} className="card">
               <figure>
-                <img src={image} alt={name} />
+                <img src={url} alt={title} />
               </figure>
               <div className="card-data">
-                <h3>{name}</h3>
+                <h3>{title}</h3>
                 <p>{description}</p>
                 <NavLink to="/service">
                   <Button className="btn">Read More</Button>
@@ -44,17 +43,18 @@ const Wrapper = styled.section`
 
   .card {
     border: 0.1rem solid rgb(170 170 170 / 40%);
+    margin: 1rem;
     .card-data {
-      padding: 0 2rem;
+      padding: 1rem;
     }
 
     h3 {
-      margin: 2rem 0;
+      margin: 1rem 0;
       font-weight: 300;
-      font-size: 2.4rem;
+      font-size: 1.8rem;
     }
     .btn {
-      margin: 2rem auto;
+      margin: 1rem auto;
       background-color: rgb(0 0 0 / 0%);
       border: 0.1rem solid rgb(98 84 243);
       display: flex;
@@ -96,9 +96,9 @@ const Wrapper = styled.section`
       transform: scale(1.2);
     }
     img {
-      max-width: 90%;
-      margin-top: 1.5rem;
-      height: 20rem;
+      max-width: 100%;
+      margin-top: 1rem;
+      height: 19rem;
       transition: all 0.2s linear;
     }
   }
