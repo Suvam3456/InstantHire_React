@@ -55,7 +55,7 @@ const AppProvider = ({ children }) => {
     return dispatch({
       type: "HOME_UPDATE",
       payload: {
-        name: "InstantHire",
+        name: "TechFusion",
         image: "./images/hero.svg",
       },
     });
