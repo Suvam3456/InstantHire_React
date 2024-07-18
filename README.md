@@ -1,6 +1,6 @@
 A multipage react js website.
 
-![image](https://github.com/user-attachments/assets/7937704c-95bd-495d-ad8e-53d2f2ed9b57)
+![image](https://github.com/user-attachments/assets/d1e0e53b-4dc7-4a65-8c8e-8d74a710850d)
 
 Services:
 ![image](https://github.com/user-attachments/assets/0ff59746-f0a7-4931-9001-5a19a121deec)
