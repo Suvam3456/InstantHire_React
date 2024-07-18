@@ -55,7 +55,7 @@ const AppProvider = ({ children }) => {
     return dispatch({
       type: "HOME_UPDATE",
       payload: {
-        name: "TechFusion",
+        name: "Techfusion",
         image: "./images/hero.svg",
       },
     });
@@ -65,7 +65,7 @@ const AppProvider = ({ children }) => {
     return dispatch({
       type: "ABOUT_UPDATE",
       payload: {
-        name: "Suvam Agrawal",
+        name: "Techfusion",
         image: "./images/about1.svg",
       },
     });
