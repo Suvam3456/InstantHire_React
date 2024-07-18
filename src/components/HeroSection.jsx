@@ -14,7 +14,7 @@ const HeroSection = () => {
           {/* <p className="hero-top-data">THIS IS ME</p> */}
           <h1 className="hero-heading">{name}</h1>
           <p className="hero-para">
-            Discover{name},your one-stop platform for advanced tech solutions. From Cloud Computing to AI and Cybersecurity, we empower your business with innovative and reliable technology.
+            Discover {name} , your one-stop platform for advanced tech solutions. From Cloud Computing to AI and Cybersecurity, we empower your business with innovative and reliable technology.
           </p>
           <Button className="btn hireme-btn">
             <NavLink to="/contact">Call us</NavLink>
